@@ -1,34 +1,10 @@
-import Contador from "./components/Contador";
-import Frutas from "./components/Frutas";
-
-
-
-const Click = () => {
-  return console.log("Me diste click");
-};
+import React from "react";
 
 const App = () => {
-  const saludo = "Saludos a todos";
-  const frutas = ["🍈", "🍓", "🍌"];
-
   return (
-    <div className="container ">
-      <p className="text-primary">{saludo}</p>
-
-
-      <Frutas frutasApp={frutas} />
-      <button
-        className="btn btn-primary"
-        onClick={() => {
-          console.log(Click);
-        }}
-      >
-        Dame click
-      </button>
-      <Contador/>
-
-     
-    </div>
+    <>
+      <h1 className="text-center my-5">Formulario</h1>
+    </>
   );
 };
 
